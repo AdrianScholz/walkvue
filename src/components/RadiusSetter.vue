@@ -3,6 +3,8 @@ import {watch, onUnmounted, ref, computed} from 'vue';
 import {usePoiStore, useCheckInStore, useAuthStore, usePictureStore, useGeoStore} from "@/stores";
 import Drawer from "@/components/Drawer.vue";
 
+const = testVar = process.env.TEST;
+
 const authStore = useAuthStore();
 const geoStore = useGeoStore();
 const poiStore = usePoiStore();
@@ -163,6 +165,7 @@ function geoQuery(radius) {
   <v-container max-width="600px">
     <v-row class="mt-16 mb-10" justify="center">
 Wie weit möchtest du wandern?
+<p>{{ testVar }}</p>
     </v-row>
     <v-row>
       <v-slider
