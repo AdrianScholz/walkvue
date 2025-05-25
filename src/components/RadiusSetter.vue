@@ -165,7 +165,7 @@ function geoQuery(radius) {
   <v-container max-width="600px">
     <v-row class="mt-16 mb-10" justify="center">
 Wie weit möchtest du wandern?
-<p>{{ testVar }}</p>
+<p>Hier steht ihre variable: {{ testVar }}</p>
     </v-row>
     <v-row>
       <v-slider
